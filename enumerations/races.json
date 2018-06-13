@@ -1,0 +1,26 @@
+[{
+    "code": "2106-3",
+    "display": "White",
+    "weight": 0.72
+  },
+  {
+    "code": "2054-5",
+    "display": "Black of African American",
+    "weight": 0.13
+  },
+  {
+    "code": "2028-9",
+    "display": "Asian",
+    "weight": 0.10
+  },
+  {
+    "code": "2076-8",
+    "display": "Native Hawaiian or Other Pacific Islander",
+    "weight": 0.03
+  },
+  {
+    "code": "1002-5",
+    "display": "American Indian or Alaska Native",
+    "weight": 0.02
+  }
+]

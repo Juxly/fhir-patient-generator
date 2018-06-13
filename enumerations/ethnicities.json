@@ -1,0 +1,12 @@
+[
+  {
+    "code": "2186-5",
+    "display": "Not Hispanic or Latino",
+    "weight": 0.82
+  },
+  {
+    "code": "2135-2",
+    "display": "Hispanic or Latino",
+    "weight": 0.18
+  }
+]

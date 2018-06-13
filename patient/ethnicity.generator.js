@@ -1,4 +1,4 @@
-import rwc from '../randomWeightedChoice'
+import rwc from '../helpers/randomWeightedChoice'
 import ethnicities from '../enumerations/ethnicities'
 import Model from '../models/ethnicity.model'
 

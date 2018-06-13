@@ -1,4 +1,4 @@
-import rwc from '../randomWeightedChoice'
+import rwc from '../helpers/randomWeightedChoice'
 import genders from '../enumerations/genders'
 
 export default function generateGender () {

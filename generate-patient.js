@@ -1,9 +1,18 @@
 import generatePatient from './patient/patient.generator'
-import faker from './lib/faker'
+import fs from 'fs'
 
 console.log('this script generates patients\n')
-console.log(generatePatient())
+var patient = generatePatient()
+console.log(patient)
 
-for (var i = 0; i < 10; i++) {
-  console.log(faker.name.firstName(0))
+var patientJSON = JSON.stringify(patient)
+var outputDir = ['./output', patient.id].join('/')
+var outputFile = outputDir + '/patient.json'
+
+if (!fs.existsSync(outputDir)){
+  fs.mkdirSync(outputDir);
 }
+fs.writeFile(outputFile, patientJSON, err => {
+  if(err) return console.log(err)
+  console.log("The file was saved!")
+})

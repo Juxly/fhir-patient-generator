@@ -5,6 +5,6 @@ export default class NameModel {
     this.text = (lastName + ', ' + firstName)
     this.family = [lastName]
     this.given = [firstName]
-    this.period = {start: '2016-06-22T20:25:58.000Z'}
+    this.period = {start: (new Date()).toISOString()}
   }
 }

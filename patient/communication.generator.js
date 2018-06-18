@@ -1,5 +1,5 @@
 import rwc from '../helpers/randomWeightedChoice'
-import Model from '../models/communication.model'
+import Model from '../models/patient/communication.model'
 import languages from '../enumerations/languages'
 
 export default function generateCommunication () {

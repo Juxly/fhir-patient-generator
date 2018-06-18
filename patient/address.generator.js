@@ -1,4 +1,4 @@
-import Model from '../models/address.model'
+import Model from '../models/patient/address.model'
 import faker from 'faker'
 
 export default function generateAddress () {

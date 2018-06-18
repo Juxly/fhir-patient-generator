@@ -9,7 +9,7 @@ import generateAddress from '../patient/address.generator'
 import generateCommunication from '../patient/communication.generator'
 import generateMaritalStatus from '../patient/maritalStatus.generator'
 
-import Model from '../models/patient.model'
+import Model from '../models/patient/patient.model'
 
 export default function generatePatient () {
   var id = generateId()

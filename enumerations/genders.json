@@ -1,11 +1,9 @@
 [{
     "text": "male",
-    "code": 0,
-    "weight": 0.5
+    "code": 0
   },
   {
     "text": "female",
-    "code": 1,
-    "weight": 0.5
+    "code": 1
   }
 ]

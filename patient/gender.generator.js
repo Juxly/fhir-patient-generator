@@ -1,6 +1,6 @@
-import rwc from '../helpers/randomWeightedChoice'
 import genders from '../enumerations/genders'
+import faker from 'faker'
 
 export default function generateGender () {
-  return rwc(genders)
+  return faker.random.arrayElement(genders)
 }

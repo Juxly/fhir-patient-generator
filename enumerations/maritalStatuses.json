@@ -1,0 +1,22 @@
+[
+  {
+    "code": "S",
+    "display": "Never Married",
+    "weight": 0.4
+  },
+  {
+    "code": "M",
+    "display": "Married",
+    "weight": 0.4
+  },
+  {
+    "code": "D",
+    "display": "Divorced",
+    "weight": 0.1
+  },
+  {
+    "code": "W",
+    "display": "Widowed",
+    "weight": 0.1
+  }
+]

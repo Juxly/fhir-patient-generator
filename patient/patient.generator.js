@@ -6,6 +6,7 @@ import generateTelecom from '../patient/telecom.generator'
 import generateGender from '../patient/gender.generator'
 import generateBirthDate from '../patient/birthDate.generator'
 import generateAddress from '../patient/address.generator'
+import generateCommunication from '../patient/communication.generator'
 
 import Model from '../models/patient.model'
 
@@ -18,5 +19,6 @@ export default function generatePatient () {
   var telecom = generateTelecom(name)
   var birthDate = generateBirthDate()
   var address = generateAddress()
-  return new Model(id, race, ethnicity, name, telecom, gender.text, birthDate, address)
+  var communication = generateCommunication()
+  return new Model(id, race, ethnicity, name, telecom, gender.text, birthDate, address, communication)
 }

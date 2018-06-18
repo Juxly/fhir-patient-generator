@@ -5,6 +5,7 @@ import generateName from '../patient/name.generator'
 import generateTelecom from '../patient/telecom.generator'
 import generateGender from '../patient/gender.generator'
 import generateBirthDate from '../patient/birthDate.generator'
+import generateAddress from '../patient/address.generator'
 
 import Model from '../models/patient.model'
 
@@ -16,5 +17,6 @@ export default function generatePatient () {
   var name = generateName(gender)
   var telecom = generateTelecom(name)
   var birthDate = generateBirthDate()
-  return new Model(id, race, ethnicity, name, telecom, gender.text, birthDate)
+  var address = generateAddress()
+  return new Model(id, race, ethnicity, name, telecom, gender.text, birthDate, address)
 }

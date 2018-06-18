@@ -1,6 +1,6 @@
 
 export default class PatientModel {
-  constructor (id, race, ethnicity, name, telecom, gender, birthDate) {
+  constructor (id, race, ethnicity, name, telecom, gender, birthDate, address) {
     this.resourceType = 'Patient'
     this.id = id
     this.extension = [race, ethnicity]
@@ -10,7 +10,7 @@ export default class PatientModel {
     this.telecom = telecom
     this.gender = gender
     this.birthDate = birthDate
-    this.address = undefined
+    this.address = address
     this.maritalStatus = undefined
     this.communication = undefined
     this.careProvider = undefined

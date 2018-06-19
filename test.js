@@ -1,5 +1,5 @@
-import generatePatient from './patient/patient.generator'
-import generateCondition from './condition/conditionBundle.generator'
+import generatePatient from './generators/patient/patient.generator'
+import generateCondition from './generators/condition/conditionBundle.generator'
 
 var patient = generatePatient()
 var condition = generateCondition(patient, [])

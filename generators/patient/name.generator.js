@@ -1,4 +1,4 @@
-import Model from '../models/patient/name.model'
+import Model from '../../models/patient/name.model'
 import faker from 'faker'
 
 export default function generateName (gender) {

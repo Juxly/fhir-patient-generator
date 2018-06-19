@@ -1,6 +1,6 @@
-import generateCondition from '../condition/condition.generator'
+import generateCondition from './condition.generator'
 
-import Model from '../models/condition/conditionBundle.model'
+import Model from '../../models/condition/conditionBundle.model'
 
 export default function generateConditionBundle (patient) {
   var condition1 = generateCondition(patient)

@@ -1,4 +1,4 @@
-import Model from '../models/patient/telecom.model'
+import Model from '../../models/patient/telecom.model'
 import faker from 'faker'
 
 export default function generateTelecom (name) {

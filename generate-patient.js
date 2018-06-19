@@ -1,6 +1,6 @@
 #!/usr/bin/env babel-node
 import args from 'args'
-import generatePatient from './patient/patient.generator'
+import generatePatient from './generators/patient/patient.generator'
 import savePatient from './helpers/savePatient'
 
 args

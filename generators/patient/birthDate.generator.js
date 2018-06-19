@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import gaussianRandom from '../helpers/gaussianRandom'
+import gaussianRandom from '../../helpers/gaussianRandom'
 
 var meanAge = 46
 var ageStandardDeviation = 13

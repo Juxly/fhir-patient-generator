@@ -1,10 +1,12 @@
 
 export default class PatientModel {
-  constructor (id, race, ethnicity, name, telecom, gender, birthDate, address, maritalStatus, communication) {
+  constructor (id, race, ethnicity, mrn, name, telecom, gender, birthDate, address, maritalStatus, communication, extensions = [], identifiers = []) {
     this.resourceType = 'Patient'
     this.id = id
     this.extension = [race, ethnicity]
-    this.identefier = undefined
+    this.extension.concat(extensions)
+    this.identefier = [mrn]
+    this.identefier.concat(identifiers)
     this.active = true
     this.name = name
     this.telecom = telecom
@@ -13,6 +15,11 @@ export default class PatientModel {
     this.address = address
     this.maritalStatus = maritalStatus
     this.communication = communication
-    this.careProvider = undefined
+    this.careProvider = [
+      {
+        reference: 'Practitioner/123456789',
+        display: 'Fisher, Burton'
+      }
+    ]
   }
 }

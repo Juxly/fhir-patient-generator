@@ -4,15 +4,24 @@ import generatePatient from './generators/patient/patient.generator'
 import savePatient from './helpers/savePatient'
 
 args
-  .option('save', 'Saves patient to disk if true', false)
-  .option('print', 'Prints patient to console if true', false)
   .option('patients', 'How many patients to generate', 1)
+  .option('specialty', 'Which specialty the patient should be generated with', '')
 
 const flags = args.parse(process.argv)
 console.log(flags)
 
 for (var i = 0; i < flags.patients; i++) {
   var patient = generatePatient()
-  if (flags.print) console.log(JSON.stringify(patient))
-  if (flags.save) savePatient(patient)
+  console.log(JSON.stringify(patient))
+  savePatient(patient)
+  switch (flags.specialty) {
+    case 'nuerology':
+      console.log('nuerology')
+      break
+    case 'hcc':
+      console.log('hcc')
+      break
+    default:
+      console.log('No known specialty selected')
+  }
 }

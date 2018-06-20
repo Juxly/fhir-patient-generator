@@ -5,6 +5,7 @@ import faker from 'faker'
 import Model from '../../models/condition/conditionBundle.model'
 
 export default function generateConditionBundle (patient, conditionSet) {
+  if (typeof conditionSet === 'undefined') return undefined
   var id = faker.random.uuid()
   var conditions = []
   _.forEach(conditionSet, condition => {

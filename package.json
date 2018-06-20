@@ -4,7 +4,7 @@
   "description": "",
   "main": "generate-patient.js",
   "scripts": {
-    "start": "babel-node generate-patient.js",
+    "generate": "babel-node generate-patient.js",
     "test": "babel-node test.js"
   },
   "author": "",
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "args": "^5.0.0",
-    "faker": "^4.1.0"
+    "faker": "^4.1.0",
+    "yargs": "^11.0.0"
   }
 }

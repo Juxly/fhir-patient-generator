@@ -14,13 +14,13 @@ export default class PatientSaver {
   savePatient () {
     if (!fs.existsSync(this.dir)) fs.mkdirSync(this.dir)
     fs.writeFileSync(this.dir + '/patient.json', `[${JSON.stringify(this.patient)}]`)
-    console.log(`Patient written to: ${this.dir}/patient.json`)
+    console.log(`\tPatient written to: ${this.dir}/patient.json`)
   }
 
   saveConditions () {
     if (!fs.existsSync(this.dir)) fs.mkdirSync(this.dir)
     fs.writeFileSync(this.dir + '/condition.json', `[${JSON.stringify(this.conditions)}]`)
-    console.log(`Conditions written to: ${this.dir}/conditions.json`)
+    console.log(`\tConditions written to: ${this.dir}/condition.json`)
   }
 
   saveAll () {

@@ -37,4 +37,5 @@ The --specialty, --s flag sets what specialty to generate patients with. The cur
 * hcc
 
 `npm run generate -- --specialty=nuerology` generates 1 nuerology patient
+
 `npm run generate -- --s=hcc` generates 1 hcc patient

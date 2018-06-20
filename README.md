@@ -6,4 +6,12 @@ run generate --specialty=neurology
 
 ## TODO
 
-* Put stuff on Todo list?
+* Document installation and usage procedures
+
+## Installation
+
+This is where the instructions should go for how to install this
+
+## Usage
+
+This is where the instructions should go for how to use this

@@ -1,7 +1,8 @@
 
 export default class ConditionBundleModel {
-  constructor (patient, conditions) {
+  constructor (id, patient, conditions) {
     this.resourceType = 'Bundle'
+    this.id = id
     this.type = 'searchset'
     this.total = conditions.length
     this.link = [

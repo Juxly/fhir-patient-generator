@@ -1,18 +1,21 @@
 
 export default class ConditionModel {
-  constructor (id, patient, condition, encounter = undefined, asserter = undefined) {
+  constructor (id, patient, condition, encounter = undefined) {
     this.fullUrl = 'http://localhost:3000/api/Condition/' + id
     this.resource = {
       resourceType: 'Condition',
       id: id,
-      meta: undefined,
+      meta: {
+        versionId: id.substring(1),
+        lastUpdated: (new Date()).toISOString()
+      },
       patient: {
         reference: 'Patient/' + patient.id,
         display: patient.name.text
       },
       encounter: encounter,
-      asserter: asserter,
-      dateRecorded: undefined,
+      asserter: patient.careProvider[0],
+      dateRecorded: (new Date()).toISOString().substring(0, 10),
       code: {
         coding: [
           {
@@ -36,7 +39,7 @@ export default class ConditionModel {
       },
       clinicalStatus: 'active',
       verificationStatus: 'confirmed',
-      onsetDateTime: undefined
+      onsetDateTime: (new Date()).toISOString()
     }
   }
 }

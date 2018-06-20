@@ -7,3 +7,4 @@ var condition = generateCondition(patient, conditionSet)
 
 console.log(patient)
 console.log(condition)
+console.log(condition.entry[0].resource)

@@ -1,4 +1,14 @@
+import faker from 'faker'
 
-export default function generateId (min = Math.pow(10, 9), max = Math.pow(10, 10)) {
-  return Math.floor(Math.random() * (max - min) + min).toString()
+export default function generateId () {
+  var template = 'c########'
+  return template.replace(/[a-z]/g, randomChar).replace(/#/g, randomNumeric)
+}
+
+function randomChar () {
+  return faker.random.arrayElement('abcdefghijklmnopqrstuvwxyz')
+}
+
+function randomNumeric () {
+  return faker.random.arrayElement('0123456789')
 }
